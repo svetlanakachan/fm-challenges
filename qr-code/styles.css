@@ -6,7 +6,7 @@
 
     --font-family: 'Outfit', sans-serif;
 
-    --border-radius: 20px;
+    --card-border-radius: 20px;
 
     /* Text Preset 1 */
     --font-preset-1-size: 2.2rem; /* 22px */
@@ -60,14 +60,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--color-white);
-    border-radius: var(--border-radius);
+    border-radius: var(--card-border-radius);
     box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.047);
     text-align: center;
 }
 
 .qr-image {
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
     margin-bottom: var(--spacing-md);
 }
 
