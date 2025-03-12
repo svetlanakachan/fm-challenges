@@ -20,6 +20,7 @@
     }
 }
 
+
 :root {
     --yellow: #F4D04E;
     --gray-950: #111111;
@@ -68,7 +69,6 @@ body {
 
 .blog-card {
     width: 100%;
-    /* max-width: 327px; */
     max-width: clamp(20.4375rem, 0.957vw + 0.8186rem, 24rem);;
     padding: var(--space-l);
     color: var(--gray-950);
