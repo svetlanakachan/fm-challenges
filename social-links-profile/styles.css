@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400 700;
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+html {
+    font-size: 14px;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --fs-14: 1rem;
+    --fs-24: 1.714rem;
+
+    --space-500: 2.857rem; /* 40px */
+    --space-300: 1.714rem; /* 24px */
+    --space-200: 1.143rem; /* 16px */
+    --space-150: 0.857rem; /* 12px */
+    --space-100: 0.571rem; /* 8px */
+    --space-50: 0.286rem; /* 4px */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--grey-900); 
+    height: 100vh;
+    width: 100vw;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: min(90%, 100%);
+    margin: 0 auto;
+}
+
+.profile-card {
+    max-width: 327px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey-800);
+    padding: var(--space-300);
+    border-radius: 12px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        max-width: 384px;
+        padding: var(--space-500);
+    }
+}
+
+.profile-card__image {
+    width: 6.286rem; /* 88px */
+    height: 6.286rem; /* 88px */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--space-300);
+}
+
+.profile-card__title {
+    font-weight: 600;
+    font-size: var(--fs-24);
+    margin-bottom: var(--space-50);
+}
+
+.profile-card__description {
+    color: var(--green);
+    font-weight: 600;
+}
+
+
+.profile-card__bio {
+    font-weight: 400;
+    margin: var(--space-300) 0;
+}
+
+.profile-card__social-links {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+
+.profile-card__social-link {
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+    padding: var(--space-150);
+    background-color: var(--grey-700);
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+}
+
+.profile-card__social-link:hover {
+    color: var(--grey-700);
+    background-color: var(--green);
+}
