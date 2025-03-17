@@ -25,7 +25,6 @@
     --brown-800: hsl(14, 45%, 36%);
     --rose-800: hsl(332, 51%, 32%);
     --rose-50: hsl(330, 100%, 98%);
-
 }
 
 /* Reset */
@@ -49,8 +48,40 @@ body {
     background-color: var(--stone-100);
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+article {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 2rem; 
+}
+
 section {
-    padding: 0 2rem; /* 0 32px */
+    padding: 2rem 0; 
+}
+
+h1,
+h2 {
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--stone-900);
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--brown-800);
 }
 
 table {
@@ -61,7 +92,7 @@ table {
 
 table caption {
     text-align: start;
-    margin-bottom: 0.75rem; /* 12px */
+    margin-bottom: 0.75rem;
 }
 
 table tr:not(:last-child) {
@@ -83,28 +114,11 @@ table td {
     
 }
 
-h1, h2 {
-    font-family: 'YoungSerif', sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    margin-bottom: 1.5rem; /* 24px */
-}
-
-h1 {
-    font-size: 2.25rem; /* 36px */
-    color: var(--stone-900);
-}
-
-h2 {
-    font-size: 1.75rem; /* 28px */
-    color: var(--brown-800);
-}
-
 hr {
     border: none;
     height: 1px;
+    width: 100%;
     background-color: var(--stone-150);
-    margin: 2rem; /* 32px */
 }
 
 ul, ol {
@@ -124,10 +138,7 @@ li::marker {
 }
 
 
-/* section Hero  */
-section.hero {
-    padding: 0;
-}
+/* header Hero  */
 
 .hero img {
     width: 100%;
@@ -136,46 +147,66 @@ section.hero {
     display: block;
 }
 
-.hero .content {
-    padding: 2.5rem 2rem 2rem; /* 40px 32px 32px*/
+.hero-text {
+    padding: 2.5rem 2rem 2rem; 
 }
 
+
+/* aside Preparation Time */
+
 .preparation-time {
-    padding: 1.5rem; /* 24px */
-    margin-top: 2rem; /* 32px */
+    padding: 1.5rem;
     background-color: var(--rose-50);
+    border-radius: 12px;
 }
 
 .preparation-time h2 {
     font-family: Outfit, sans-serif;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem; 
     font-weight: 600;
     color: var(--rose-800);
-    margin-bottom: 1rem; /* 16px */
+    margin-bottom: 1rem; 
 }
 
 .preparation-time ul::marker {
     color: var(--rose-800);
 }
 
-/* section Nutrition */
-.nutrition {
-    margin-bottom: 2.5rem; /* 40px */
-}
 
-@media screen and (min-width: 768px) {
-
-    section {
-        padding: 2.5rem; /* 40px */
-    }
-    
+@media (min-width: 768px) {
     h1 {
-        font-size: 2.5rem; /* 40px */
+        font-size: 2.5rem;
+    }
+
+    .container {
+        max-width: 616px;
+    }
+
+    article {
+        margin: 128px auto;
+        border-radius: 24px;
+    }
+
+    .hero {
+        padding: 2.5rem; 
     }
 
     .hero img {
         border-radius: 12px;
-        margin: 40px 40px 0;
     }
-    
+
+    .hero-text {
+        padding: 2.5rem 0 0;
+    }
+
+    .wrapper {
+        margin: 0 2.5rem; 
+    }
 }
+
+@media (min-width: 1140px) {
+    .container {
+        max-width: 736px;
+    }
+}
+
