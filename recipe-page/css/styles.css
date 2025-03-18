@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
     font-family: 'Outfit';
-    src: url('../../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
     font-weight: 400 700;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'YoungSerif';
-    src: url('../../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
