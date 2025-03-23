@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
-.text-preset-1, .price strong, h2 {
+.text-preset-1, .price strong, h3 {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   line-height: 100%;
@@ -24,7 +24,7 @@
   font-weight: 500;
 }
 
-.text-preset-4, h1 {
+.text-preset-4, h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   line-height: 120%;
@@ -62,11 +62,22 @@ body {
   height: 100vh;
 }
 
-h1 {
-  text-transform: uppercase;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 h2 {
+  text-transform: uppercase;
+}
+
+h3 {
   color: hsl(212, 21%, 14%);
 }
 
