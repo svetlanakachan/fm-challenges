@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $cream;
+    color: $grey;
+    height: 100vh;
+}
+
+h1 {
+    @extend .text-preset-4 !optional;
+    text-transform: uppercase;
+}
+
+h2 {
+    @extend .text-preset-1 !optional;
+    color: $black;
+}
