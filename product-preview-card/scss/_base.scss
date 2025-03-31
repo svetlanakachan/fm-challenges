@@ -10,7 +10,12 @@ body {
     justify-content: center;
     background-color: $cream;
     color: $grey;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 1rem;
+    @media (min-width: 48rem) {
+        padding: 0;
+        height: 100vh;
+    }
 }
 
 .sr-only {

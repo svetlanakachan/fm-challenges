@@ -59,7 +59,14 @@ body {
           justify-content: center;
   background-color: hsl(30, 38%, 92%);
   color: hsl(228, 12%, 48%);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 1rem;
+}
+@media (min-width: 48rem) {
+  body {
+    padding: 0;
+    height: 100vh;
+  }
 }
 
 .sr-only {
@@ -83,7 +90,7 @@ h3 {
 
 .product-card {
   width: 100%;
-  max-width: 21.875rem;
+  max-width: clamp(21.875rem, 6.9656rem + 63.6132vw, 37.5rem);
   display: grid;
   margin: 0 auto;
   border-radius: 8px;
